@@ -1,11 +1,11 @@
-/* Reset básico */
+/* reset básico pra tirar margens e paddings padrão */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+/* estilo geral do body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -13,7 +13,7 @@ body {
     color: #333;
 }
 
-/* Header */
+/* header do site */
 header {
     text-align: center;
     padding: 20px;
@@ -21,6 +21,7 @@ header {
     color: #fff;
 }
 
+/* imagem do poster dentro do header */
 .header-container img {
     max-width: 200px;  /* ajusta o tamanho do pôster */
     height: auto;
@@ -28,17 +29,19 @@ header {
     margin: 0 auto;
 }
 
+/* título principal */
 .header-container h1 {
     margin-top: 10px;
     font-size: 2em;
 }
 
-/* Menu de navegação */
+/* área do menu */
 nav {
     margin-top: 15px;
     background-color: #222;
 }
 
+/* lista de links do menu */
 .menu {
     list-style: none;
     display: flex;
@@ -50,6 +53,7 @@ nav {
     margin: 5px 15px;
 }
 
+/* links do menu */
 .menu a {
     text-decoration: none;
     color: #fff;
@@ -58,19 +62,20 @@ nav {
     transition: background-color 0.3s;
 }
 
+/* efeito hover simples */
 .menu a:hover {
     background-color: #555;
     border-radius: 4px;
 }
 
-/* Main */
+/* corpo principal das páginas */
 main {
     max-width: 900px;
     margin: 20px auto;
     padding: 0 15px;
 }
 
-/* Seções */
+/* seções de conteúdo */
 section {
     margin-bottom: 30px;
     background-color: #fff;
@@ -79,12 +84,13 @@ section {
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
+/* títulos das seções */
 section h2 {
     margin-bottom: 10px;
     color: #111;
 }
 
-/* Footer */
+/* rodapé fixando a identidade visual escura */
 footer {
     text-align: center;
     padding: 15px;
@@ -93,6 +99,7 @@ footer {
     font-size: 0.9em;
 }
 
+/* links dentro do footer */
 footer a {
     color: #1e90ff;
     text-decoration: none;
@@ -102,7 +109,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsividade */
+/* responsividade geral */
 @media (max-width: 768px) {
     .menu {
         flex-direction: column;
@@ -112,6 +119,7 @@ footer a:hover {
     }
 }
 
+/* ajustes pra telas menores */
 @media (max-width: 480px) {
     .header-container h1 {
         font-size: 1.5em;
@@ -121,7 +129,7 @@ footer a:hover {
     }
 }
 
-/* Container de cards */
+/* container que organiza os cards de elenco */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +138,7 @@ footer a:hover {
     margin-top: 15px;
 }
 
-/* Card individual */
+/* estilo base de cada card */
 .card {
     background-color: #fff;
     border-radius: 5px;
@@ -141,23 +149,26 @@ footer a:hover {
     transition: transform 0.3s;
 }
 
+/* imagem dentro do card */
 .card img {
     width: 100%;
     border-radius: 5px;
     height: auto;
 }
 
+/* nome do ator */
 .card h3 {
     margin: 10px 0 5px 0;
     font-size: 1.1em;
 }
 
+/* papel do ator no filme */
 .card p {
     font-size: 0.9em;
     color: #555;
 }
 
+/* leve efeito quando passa o mouse */
 .card:hover {
     transform: translateY(-5px);
 }
-
