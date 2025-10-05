@@ -7,6 +7,12 @@
     <title>Extras - Batman: The Dark Knight</title>
     <!-- link pro css principal -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* remove borda do iframe do trailer */
+        .trailer-frame {
+            border: 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -31,8 +37,11 @@
         <section id="trailer">
             <h2>Trailer</h2>
             <div style="text-align: center;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oFJ7Yry2p18?si=9TVxc55NSxGxwzfJ" 
-                    title="Trailer Batman: The Dark Knight" frameborder="0" allowfullscreen>
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/oFJ7Yry2p18?si=9TVxc55NSxGxwzfJ" 
+                        title="Trailer Batman: The Dark Knight" 
+                        allowfullscreen
+                        class="trailer-frame">
                 </iframe>
             </div>
         </section>

@@ -170,5 +170,5 @@ footer a:hover {
 
 /* leve efeito quando passa o mouse */
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(11px);
 }
